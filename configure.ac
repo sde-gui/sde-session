@@ -1,5 +1,5 @@
 AC_PREREQ([2.57])
-AC_INIT(lxde-common,[0.99.2], [http://lxde.org])
+AC_INIT(sde-session,[0.1], [https://sde-gui.github.io/])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign no-dist-gzip dist-xz])
 dnl AC_PROG_INTLTOOL(, [no-xml])
 dnl AM_MAINTAINER_MODE
@@ -45,7 +45,7 @@ then
     sysconfdir=/etc
 fi
 
-GETTEXT_PACKAGE=lxde-common
+GETTEXT_PACKAGE=sde-session
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Name of default gettext domain])
 AC_SUBST(GETTEXT_PACKAGE)
 
