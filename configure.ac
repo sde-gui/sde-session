@@ -75,7 +75,7 @@ AC_OUTPUT([
   lxpanel/panel
   openbox/rc.xml
   openbox-sde
-  pcmanfm/pcmanfm.conf
+  stuurman-desktop/desktop.conf
   man/Makefile
   po/Makefile.in
 ])

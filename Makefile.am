@@ -6,7 +6,7 @@ bin_SCRIPTS = startsde lxde-logout openbox-sde
 xsessiondir=$(xsesspath)
 xsession_DATA = LXDE.desktop
 
-defaultsdir=$(sysconfdir)/xdg/lxsession/LXDE
+defaultsdir=$(sysconfdir)/xdg/sde-session-manager/SDE
 defaults_DATA = autostart desktop.conf
 
 desktopdir=$(datadir)/applications
@@ -14,32 +14,32 @@ desktop_in_files = lxde-logout.desktop.in lxde-screenlock.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
-wallpapersdir=$(datadir)/lxde/wallpapers
+wallpapersdir=$(datadir)/sde/wallpapers
 wallpapers_DATA= \
 	wallpapers/LICENSE.txt \
 	wallpapers/ken-cheung-lYMqE22gpXc-unsplash.jpg \
 	wallpapers/lloyd-blunk-mH9Mz6piRoc-unsplash.jpg \
 	wallpapers/philip-kl6zd_FJtUo-unsplash.jpg
 
-imagesdir=$(datadir)/lxde/images
+imagesdir=$(datadir)/sde/images
 images_DATA= \
 	images/logout-banner.png \
-	images/lxde-icon.png
+	images/sde-icon.png
 
-lxpaneldir=$(sysconfdir)/xdg/lxpanel/LXDE
+lxpaneldir=$(sysconfdir)/xdg/lxpanel/SDE
 lxpanel_DATA=lxpanel/config
 
-lxpanel_paneldir=$(sysconfdir)/xdg/lxpanel/LXDE/panels
+lxpanel_paneldir=$(sysconfdir)/xdg/lxpanel/SDE/panels
 lxpanel_panel_DATA=lxpanel/panel
 
-openboxdir=$(sysconfdir)/xdg/openbox/LXDE
+openboxdir=$(sysconfdir)/xdg/openbox/SDE
 openbox_DATA= \
 	openbox/rc.xml \
 	openbox/menu.xml
 
-pcmanfmdir=$(sysconfdir)/xdg/pcmanfm/LXDE
-pcmanfm_DATA= \
-	pcmanfm/pcmanfm.conf
+stuurman_desktopdir=$(sysconfdir)/xdg/stuurman-desktop/SDE
+stuurman_desktop_DATA= \
+	stuurman-desktop/desktop.conf
 
 EXTRA_DIST = \
 	autostart \
@@ -52,7 +52,7 @@ EXTRA_DIST = \
 	openbox/rc.xml.in \
 	openbox/menu.xml \
 	openbox-sde.in \
-	pcmanfm/pcmanfm.conf.in \
+	stuurman-desktop/desktop.conf.in \
 	$(lxpanel_DATA) \
 	lxpanel/panel.in
 
