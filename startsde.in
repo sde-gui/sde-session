@@ -53,7 +53,7 @@ check_menu_prefix "mate-"
 check_menu_prefix "xfce-"
 check_menu_prefix "lxqt-"
 
-export XDG_CURRENT_DESKTOP="LXDE"
+export XDG_CURRENT_DESKTOP="SDE"
 
-# Start the LXDE session
-exec @prefix@/bin/lxsession -s LXDE -e LXDE
+# Start the SDE session
+exec @prefix@/bin/sde-session-manager -s SDE -e SDE

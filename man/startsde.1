@@ -1,7 +1,7 @@
-.TH startsde 1 "Mar 21, 2008" "startsde"
+.TH startsde 1 "Sep 22, 2020" "startsde"
 
 .SH NAME
-startsde \- X session script to prepare environment and run lxsession.
+startsde \- X session script to prepare environment and run sde-session-manager.
 
 .SH SYNOPSIS
 .B startsde
@@ -9,8 +9,12 @@ startsde \- X session script to prepare environment and run lxsession.
 
 .SH DESCRIPTION
 .PP
-\fBstartsde\fP is used to start the desktop session of LXDE.
-By default it loads openbox, lxpanel, stuurman, stuurman-desktop, dbus-launch, and lxsession.
+\fBstartsde\fP is used to start the desktop session of SDE.
+It adjusts the environment variables, starts dbus-launch and sde-session-manager.
+.PP
+\fBsde-session-manager\fP then normally starts openbox, waterline, stuurman, stuurman-desktop and xscreensaver.
 
 .SH AUTHOR
+Vadim Ushakov <igeekless@gmail.com>
+.PP
 Hong Jen Yee <pcman.tw@gmail.com>
