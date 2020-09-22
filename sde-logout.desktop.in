@@ -3,6 +3,7 @@ Type=Application
 _Name=Logout
 _Comment=Logout, shutdown or reboot
 Icon=gnome-logout
-Exec=lxde-logout
-TryExec=lxsession-logout
+Exec=sde-logout
+TryExec=sde-logout
 NoDisplay=true
+# FIXME: this file should probably be moved to sde-session-manager

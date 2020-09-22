@@ -39,7 +39,7 @@
   </item>
   <separator />
   <item label="Exit">
-    <action name="Execute"><command>lxde-logout</command></action>
+    <action name="Execute"><command>sde-logout</command></action>
   </item>
 </menu>
 

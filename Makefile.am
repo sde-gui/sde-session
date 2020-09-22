@@ -1,6 +1,6 @@
 SUBDIRS = man po
 
-bin_SCRIPTS = startsde lxde-logout openbox-sde
+bin_SCRIPTS = startsde openbox-sde
 
 # Currently these paths are hardcoded.
 xsessiondir=$(xsesspath)
@@ -10,7 +10,7 @@ defaultsdir=$(sysconfdir)/xdg/sde-session-manager/SDE
 defaults_DATA = autostart desktop.conf
 
 desktopdir=$(datadir)/applications
-desktop_in_files = lxde-logout.desktop.in lxde-screenlock.desktop.in
+desktop_in_files = sde-logout.desktop.in sde-lock-screen.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 

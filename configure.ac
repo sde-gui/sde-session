@@ -70,7 +70,6 @@ AC_SUBST(USE_NLS)
 AC_OUTPUT([
   Makefile
   startsde
-  lxde-logout
   SDE.desktop.in
   lxpanel/panel
   openbox/rc.xml

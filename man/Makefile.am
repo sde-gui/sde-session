@@ -1,4 +1,5 @@
-dist_man_MANS = lxde-logout.1 startsde.1 openbox-sde.1
+# FIXME: sde-logout.1 should be placed in sde-session-manager
+dist_man_MANS = sde-logout.1 startsde.1 openbox-sde.1
 
 EXTRA_DIST = openbox-sde.xml
 

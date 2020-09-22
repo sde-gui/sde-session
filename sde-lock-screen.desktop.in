@@ -3,6 +3,7 @@ Type=Application
 _Name=ScreenLock
 _Comment=Lock your screen
 Icon=system-lock-screen
-Exec=lxlock
-TryExec=lxlock
+Exec=sde-lock-screen
+TryExec=sde-lock-screen
 NoDisplay=true
+# FIXME: this file should probably be moved to sde-session-manager
