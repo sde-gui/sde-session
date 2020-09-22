@@ -16,9 +16,10 @@ desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 
 wallpapersdir=$(datadir)/lxde/wallpapers
 wallpapers_DATA= \
-	wallpapers/lxde_blue.jpg \
- 	wallpapers/lxde_red.jpg \
-	wallpapers/lxde_green.jpg
+	wallpapers/LICENSE.txt \
+	wallpapers/ken-cheung-lYMqE22gpXc-unsplash.jpg \
+	wallpapers/lloyd-blunk-mH9Mz6piRoc-unsplash.jpg \
+	wallpapers/philip-kl6zd_FJtUo-unsplash.jpg
 
 imagesdir=$(datadir)/lxde/images
 images_DATA= \
