@@ -71,7 +71,7 @@ AC_OUTPUT([
   Makefile
   startsde
   lxde-logout
-  LXDE.desktop.in
+  SDE.desktop.in
   lxpanel/panel
   openbox/rc.xml
   openbox-sde

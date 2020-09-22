@@ -4,7 +4,7 @@ bin_SCRIPTS = startsde lxde-logout openbox-sde
 
 # Currently these paths are hardcoded.
 xsessiondir=$(xsesspath)
-xsession_DATA = LXDE.desktop
+xsession_DATA = SDE.desktop
 
 defaultsdir=$(sysconfdir)/xdg/sde-session-manager/SDE
 defaults_DATA = autostart desktop.conf
@@ -43,7 +43,7 @@ stuurman_desktop_DATA= \
 EXTRA_DIST = \
 	autostart \
 	desktop.conf \
-	LXDE.desktop.in.in \
+	SDE.desktop.in.in \
 	$(desktop_in_files) \
 	startsde.in \
 	$(wallpapers_DATA) \
@@ -55,5 +55,5 @@ EXTRA_DIST = \
 	$(lxpanel_DATA) \
 	lxpanel/panel.in
 
-CLEANFILES = $(bin_SCRIPTS) LXDE.desktop $(desktop_DATA)
+CLEANFILES = $(bin_SCRIPTS) SDE.desktop $(desktop_DATA)
 
