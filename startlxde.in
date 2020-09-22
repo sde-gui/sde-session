@@ -34,9 +34,13 @@ xprop -root -remove _NET_NUMBER_OF_DESKTOPS -remove _NET_DESKTOP_NAMES -remove _
 export SAL_USE_VCLPLUGIN=gtk
 
 # Launch DBus if needed
-if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
-	if test -z "$XDG_RUNTIME_DIR" -o ! -S "$XDG_RUNTIME_DIR/bus" -o ! -O "$XDG_RUNTIME_DIR/bus"; then
+if test -z "$DBUS_SESSION_BUS_ADDRESS"; then
+	if which dbus-launch >/dev/null; then
 		eval "$(dbus-launch --sh-syntax --exit-with-session)"
+	fi
+else
+	if which dbus-update-activation-environment >/dev/null; then
+		dbus-update-activation-environment --systemd --all
 	fi
 fi
 
