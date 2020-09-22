@@ -23,8 +23,7 @@ wallpapers_DATA= \
 
 imagesdir=$(datadir)/sde/images
 images_DATA= \
-	images/logout-banner.png \
-	images/sde-icon.png
+	images/logout-banner.png
 
 lxpaneldir=$(sysconfdir)/xdg/lxpanel/SDE
 lxpanel_DATA=lxpanel/config
