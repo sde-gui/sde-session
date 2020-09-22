@@ -21,10 +21,6 @@ wallpapers_DATA= \
 	wallpapers/lloyd-blunk-mH9Mz6piRoc-unsplash.jpg \
 	wallpapers/philip-kl6zd_FJtUo-unsplash.jpg
 
-imagesdir=$(datadir)/sde/images
-images_DATA= \
-	images/logout-banner.png
-
 lxpaneldir=$(sysconfdir)/xdg/lxpanel/SDE
 lxpanel_DATA=lxpanel/config
 
