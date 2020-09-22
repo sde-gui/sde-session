@@ -37,7 +37,22 @@ else
 	fi
 fi
 
-export XDG_MENU_PREFIX="lxde-"
+# Trying to locate an installed application menu
+check_menu_prefix()
+{
+	if [ -z "$XDG_MENU_PREFIX" ]; then
+		if [ -f "@sysconfdir@/xdg/menus/${1}applications.menu" ]; then
+			export XDG_MENU_PREFIX="$1"
+		fi
+	fi
+}
+
+check_menu_prefix "sde-"
+check_menu_prefix "lxde-"
+check_menu_prefix "mate-"
+check_menu_prefix "xfce-"
+check_menu_prefix "lxqt-"
+
 export XDG_CURRENT_DESKTOP="LXDE"
 
 # Start the LXDE session
