@@ -69,7 +69,7 @@ AC_SUBST(USE_NLS)
 
 AC_OUTPUT([
   Makefile
-  startlxde
+  startsde
   lxde-logout
   LXDE.desktop.in
   lxpanel/panel

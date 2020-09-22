@@ -1,4 +1,4 @@
-dist_man_MANS = lxde-logout.1 startlxde.1 openbox-sde.1
+dist_man_MANS = lxde-logout.1 startsde.1 openbox-sde.1
 
 EXTRA_DIST = openbox-sde.xml
 

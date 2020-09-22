@@ -1,6 +1,6 @@
 SUBDIRS = man po
 
-bin_SCRIPTS = startlxde lxde-logout openbox-sde
+bin_SCRIPTS = startsde lxde-logout openbox-sde
 
 # Currently these paths are hardcoded.
 xsessiondir=$(xsesspath)
@@ -45,7 +45,7 @@ EXTRA_DIST = \
 	desktop.conf \
 	LXDE.desktop.in.in \
 	$(desktop_in_files) \
-	startlxde.in \
+	startsde.in \
 	$(wallpapers_DATA) \
 	$(images_DATA) \
 	openbox/rc.xml.in \
