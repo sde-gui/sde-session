@@ -1,6 +1,6 @@
 SUBDIRS = man po
 
-bin_SCRIPTS = startlxde lxde-logout openbox-lxde
+bin_SCRIPTS = startlxde lxde-logout openbox-sde
 
 # Currently these paths are hardcoded.
 xsessiondir=$(xsesspath)
@@ -50,7 +50,7 @@ EXTRA_DIST = \
 	$(images_DATA) \
 	openbox/rc.xml.in \
 	openbox/menu.xml \
-	openbox-lxde.in \
+	openbox-sde.in \
 	pcmanfm/pcmanfm.conf.in \
 	$(lxpanel_DATA) \
 	lxpanel/panel.in

@@ -9,25 +9,25 @@
     </copyright>
     <date>April  20, 2008</date>
   </refentryinfo>
-  <refmeta>    <refentrytitle>OPENBOX-LXDE</refentrytitle>
-<refmiscinfo class="source">http://LXDE.org</refmiscinfo>
+  <refmeta>    <refentrytitle>OPENBOX-SDE</refentrytitle>
+<refmiscinfo class="source">https://sde-gui.github.io/</refmiscinfo>
 
     <manvolnum>1</manvolnum>
   </refmeta>
-  <refnamediv>    <refname>openbox-lxde</refname>
+  <refnamediv>    <refname>openbox-sde</refname>
 
-    <refpurpose>wrapper to run openbox for LXDE</refpurpose>
+    <refpurpose>wrapper to run openbox for SDE</refpurpose>
   </refnamediv>
-  <refsynopsisdiv>    <cmdsynopsis>      <command>openbox-lxde</command>
+  <refsynopsisdiv>    <cmdsynopsis>      <command>openbox-sde</command>
     </cmdsynopsis>
   </refsynopsisdiv>
   <refsect1>    <title>DESCRIPTION</title>
 
     <para>This manual page documents briefly the
-      <command>openbox-lxde</command> command.</para>
+      <command>openbox-sde</command> command.</para>
 
-    <para><command>openbox-lxde</command> is a wrapper script which 
-    runs openbox with LXDE specific config file.
+    <para><command>openbox-sde</command> is a wrapper script which 
+    runs openbox with SDE specific config file.
     </para>
    
   </refsect1>
