@@ -6,9 +6,9 @@ fi
 
 # Ensure the existance of openbox config file
 OPENBOX_CONF_DIR="$XDG_CONFIG_HOME/openbox"
-if [ ! -f "$OPENBOX_CONF_DIR/lxde-rc.xml" ]; then
+if [ ! -f "$OPENBOX_CONF_DIR/SDE-rc.xml" ]; then
 	mkdir -p "$OPENBOX_CONF_DIR"
-	cp @sysconfdir@/xdg/openbox/LXDE/rc.xml "$OPENBOX_CONF_DIR/lxde-rc.xml"
+	cp @sysconfdir@/xdg/openbox/SDE/rc.xml "$OPENBOX_CONF_DIR/SDE-rc.xml"
 fi
 
-exec openbox --config-file $XDG_CONFIG_HOME/openbox/lxde-rc.xml $@
+exec openbox --config-file $XDG_CONFIG_HOME/openbox/SDE-rc.xml $@
