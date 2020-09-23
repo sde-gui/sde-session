@@ -21,11 +21,13 @@ wallpapers_DATA= \
 	wallpapers/lloyd-blunk-mH9Mz6piRoc-unsplash.jpg \
 	wallpapers/philip-kl6zd_FJtUo-unsplash.jpg
 
-lxpaneldir=$(sysconfdir)/xdg/lxpanel/SDE
-lxpanel_DATA=lxpanel/config
+waterlinedir=$(sysconfdir)/xdg/sde/waterline/SDE
+waterline_DATA=waterline/config
 
-lxpanel_paneldir=$(sysconfdir)/xdg/lxpanel/SDE/panels
-lxpanel_panel_DATA=lxpanel/panel
+waterline_paneldir=$(sysconfdir)/xdg/sde/waterline/SDE/panels
+waterline_panel_DATA= \
+	waterline/panels/panel1.js \
+	waterline/panels/panel2.js
 
 openboxdir=$(sysconfdir)/xdg/openbox/SDE
 openbox_DATA= \
@@ -48,8 +50,7 @@ EXTRA_DIST = \
 	openbox/menu.xml \
 	openbox-sde.in \
 	stuurman-desktop/desktop.conf.in \
-	$(lxpanel_DATA) \
-	lxpanel/panel.in
+	$(waterline_DATA)
 
 CLEANFILES = $(bin_SCRIPTS) SDE.desktop $(desktop_DATA)
 

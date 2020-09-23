@@ -71,7 +71,6 @@ AC_OUTPUT([
   Makefile
   startsde
   SDE.desktop.in
-  lxpanel/panel
   openbox/rc.xml
   openbox-sde
   stuurman-desktop/desktop.conf
