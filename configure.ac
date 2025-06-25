@@ -1,6 +1,8 @@
 AC_PREREQ([2.57])
 AC_INIT(sde-session,[0.1], [https://sde-gui.github.io/])
+AC_CONFIG_AUX_DIR([build-aux])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign no-dist-gzip dist-xz])
+AC_CONFIG_MACRO_DIR([m4])
 dnl AC_PROG_INTLTOOL(, [no-xml])
 dnl AM_MAINTAINER_MODE
 

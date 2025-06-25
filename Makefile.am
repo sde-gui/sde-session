@@ -54,3 +54,5 @@ EXTRA_DIST = \
 
 CLEANFILES = $(bin_SCRIPTS) SDE.desktop $(desktop_DATA)
 
+
+ACLOCAL_AMFLAGS =  -I m4
